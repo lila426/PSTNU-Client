@@ -1,0 +1,34 @@
+.element-properties label {
+  font-weight: bold;
+}
+
+.element-properties label:after {
+  content: ': ';
+}
+
+.element-properties button + button {
+  margin-left: 10px;
+}
+
+.element-properties button {
+  margin-left: 10px;
+}
+
+.element-properties input {
+  margin-right:10px;
+}
+
+.element-properties fieldset{
+}
+
+.diagram-note {
+      background-color: red;
+      color: White;
+      border-radius: 5px;
+      font-family: Arial;
+      font-size: 12px;
+      padding: 5px;
+      min-height: 16px;
+      width: 50px;
+      text-align: center;
+    }

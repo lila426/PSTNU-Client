@@ -1,0 +1,46 @@
+{
+  "name": "bpmn-js-example-react-properties-panel",
+  "version": "0.0.0",
+  "description": "A custom react properties panel example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --watch",
+    "build": "webpack --config webpack.config.js",
+    "dev": "nodemon ./app/app.js"
+  },
+  "author": {
+    "name": "Keti Lila",
+    "url": "https://github.com/pinussilvestrus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpmn-io/bpmn-js-example-react-properties-panel"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "raw-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bpmn-js": "^8.10.0",
+    "bpmn-js-properties-panel": "^0.46.0",
+    "downloadjs": "^1.4.7",
+    "jquery": "^3.6.0",
+    "moddle": "^5.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "svg-curves": "^1.0.0",
+    "util": "^0.12.4",
+    "xml2js": "^0.4.23"
+  }
+}

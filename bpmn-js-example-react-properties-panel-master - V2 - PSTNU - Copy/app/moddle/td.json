@@ -1,0 +1,197 @@
+{
+	"name": "TemporalData",
+	"prefix": "td",
+	"uri": "http://TemporalData",
+	"xml": {
+		"tagAlias": "lowerCase"
+	},
+	"associations": [],
+	"types": [
+		{
+			"name": "DurationConstraintTask",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "contigency",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "maxDuration",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "minDuration",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "prepLabel",
+					"isAttr": true,
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "StartNode",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "id",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "x",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "y",
+					"isAttr": true,
+					"type": "Integer"
+				}
+			]
+		},
+		{
+			"name": "PNode",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "id",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "x",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "y",
+					"isAttr": true,
+					"type": "Integer"
+				}
+			]
+		},
+		{
+			"name": "EndNode",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "id",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "x",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "y",
+					"isAttr": true,
+					"type": "Integer"
+				}
+			]
+		},
+		{
+			"name": "CustomConnector",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "id",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "waypoints",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "source",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "target",
+					"isAttr": true,
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "DurationConstraintGateway",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "maxDuration",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "minDuration",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "prepLabel",
+					"isAttr": true,
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "ObservationalLabel",
+			"superClass": ["Element"],
+			"properties": [{
+				 "name": "obserLabel",
+				 "isAttr": true,
+				 "type": "String"
+		 }]
+		},
+		{
+			"name": "TemporalConstraint",
+			"superClass": ["Element"],
+			"properties": [{
+					"name": "id",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "value",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "constraintType",
+					"isAttr": true,
+					"type": "Integer"
+				},
+				{
+					"name": "waypoints",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "source",
+					"isAttr": true,
+					"type": "String"
+				},
+				{
+					"name": "target",
+					"isAttr": true,
+					"type": "String"
+				}
+			]
+		},
+		{
+			"name": "BranchValue",
+			"extends": [
+				"bpmn:SequenceFlow"
+			],
+			"properties": [{
+				"name": "branchValue",
+				"isAttr": true,
+				"type": "Integer"
+			}]
+		}
+	]
+
+}

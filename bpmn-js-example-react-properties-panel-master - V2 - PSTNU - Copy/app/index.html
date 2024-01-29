@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>bpmn-js-react-properties-panel</title>
+
+  <link rel="stylesheet" href="vendor/bpmn-js/assets/diagram-js.css" />
+  <link rel="stylesheet" href="vendor/bpmn-js/assets/bpmn-font/css/bpmn-embedded.css" />
+  <link rel="stylesheet" href="../app/styles/app.css" />
+
+
+
+</head>
+<body>
+  <div class="modeler-parent">
+    <div id="modeler-container"></div>
+    <div id="properties-container"></div>
+  </div>
+
+  <ul class="buttons">
+  <li>
+    download
+  </li>
+  <li>
+    <a id="js-download-diagram" href title="download BPMN diagram">
+      BPMN diagram
+    </a>
+  </li>
+  <li>
+    <a id="js-download-svg" href title="download as SVG image">
+      SVG image
+    </a>
+  </li>
+  <li>
+    <a id="js-download-json" href title="download diagram as JSON">
+      JSON diagram
+    </a>
+  </li>
+  <li id="js-propagation-result">
+  </li>
+  </ul>
+
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
